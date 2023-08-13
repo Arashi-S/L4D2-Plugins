@@ -1,0 +1,191 @@
+"Phrases"
+{
+	"L4D2C1"
+	{
+		"en"		"死亡中心"
+	}
+	"L4D2C2"
+	{
+		"en"		"黑色狂欢节"
+	}
+	"L4D2C3"
+	{
+		"en"		"沼泽激战"
+	}
+	"L4D2C4"
+	{
+		"en"		"暴风骤雨"
+	}
+	"L4D2C5"
+	{
+		"en"		"教区"
+	}
+	"L4D2C6"
+	{
+		"en"		"短暂时刻"
+	}
+	"L4D2C7"
+	{
+		"en"		"牺牲"
+	}
+	"L4D2C8"
+	{
+		"en"		"毫不留情"
+	}
+	"L4D2C9"
+	{
+		"en"		"坠机险途"
+	}
+	"L4D2C10"
+	{
+		"en"		"死亡丧钟"
+	}
+	"L4D2C11"
+	{
+		"en"		"静寂时分"
+	}
+	"L4D2C12"
+	{
+		"en"		"血腥收获"
+	}
+	"L4D2C13"
+	{
+		"en"		"刺骨寒溪"
+	}
+	"L4D2C14"
+	{
+		"en"		"最后的生还者"
+	}
+	"2019"
+	{
+		"en"		"2019 (Anniversary Edition)"
+	}
+	"buenosaires"
+	{
+		"en"		"Cambalache - Buenos Aires"
+	}
+	"buenosaires2"
+	{
+		"en"		"Cambalache 2 - Buenos Aires"
+	}
+	"FarewellChenming"
+	{
+		"en"		"Farewell Chenming"
+	}
+	"DayBreak"
+	{
+		"en"		"Day Break"
+	}
+	"deadseries"
+	{
+		"en"		"DeadSeries"
+	}
+	"dejavutacticalespionage"
+	{
+		"en"		"Deja Vu: Tactical Espionage"
+	}
+	"detourahead"
+	{
+		"en"		"$DetourAhead_Title"
+	}
+	"Diescraper362"
+	{
+		"en"		"Diescraper Redux 3.62"
+	}
+	"Diescraper362VS"
+	{
+		"en"		"Diescraper Redux 3.62"
+	}
+	"Escansion"
+	{
+		"en"		"Escansion"
+	}
+	"heavencanwait2"
+	{
+		"en"		"Heaven Can Wait II"
+	}
+	"hongkong"
+	{
+		"en"		"Hong Kong 4 Dead"
+	}
+	"ihatemountains2"
+	{
+		"en"		"I Hate Mountains 2 (1.5)"
+	}
+	"Lockdown"
+	{
+		"en"		"Lockdown"
+	}
+	"NH2Port"
+	{
+		"en"		"Nightmare_House_2_Port"
+	}
+	"nightterror"
+	{
+		"en"		"Night Terror"
+	}
+	"QuestionableEthicsAlphaTest"
+	{
+		"en"		"Questionable Ethics: Alpha test"
+	}
+	"QuestionableEthics"
+	{
+		"en"		"Questionable Ethics v1.2"
+	}
+	"SaltHellPark"
+	{
+		"en"		"SaltHell Park"
+	}
+	"suicideblitz2"
+	{
+		"en"		"Suicide Blitz 2"
+	}
+	"TheCurseofLazarCastle"
+	{
+		"en"		"TheCurseOfLazarCastle"
+	}
+	"ThereIsOnlyOneWay"
+	{
+		"en"		"There is only one way"
+	}
+	"TimeKHMC"
+	{
+		"en"		"Time to Die"
+	}
+	"paintrain"
+	{
+		"en"		"Pain Train"
+	}
+	"warcelona"
+	{
+		"en"		"Warcelona"
+	}
+	"WhiteForest"
+	{
+		"en"		"White Forest"
+	}
+	"yichangshi"
+	{
+		"en"		"宜昌市V5.01"
+	}
+	"noechoremastered"
+	{
+		"en"		"音讯全无重制版(No Echo RE)"
+	}
+	"Zengchengone"
+	{
+		"en"		"广州增城Lv7.3"
+	}
+	"DarkCarnivalRemix"
+	{
+		"en"		"Dark Carnival Remix"
+	}
+	"CityOfTheDeadRedux"
+	{
+		"en"		"City of the Dead Redux"
+	}
+	"DevilMountain"
+	{
+		"en"		"Devil Mountain"
+	}
+}

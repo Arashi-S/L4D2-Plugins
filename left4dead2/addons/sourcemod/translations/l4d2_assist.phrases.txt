@@ -1,0 +1,100 @@
+﻿//  ~ \x01 ~ {default}
+//  ~ \x02
+//  ~ \x03 ~ {lightgreen}
+//  ~ \x04 ~ {green}
+//  ~ \x05 ~ {olive}
+//  ~ \x06
+// #include <colors> (new colors: {red}, {blue}) - but 1 color in 1 string ({lightgreen} or {red} or {blue})
+
+"Phrases"
+{
+	"TANK_KILLED"
+	{
+		"#format"	"{1:N},{2:s}"
+		"en"		"{1} killed: {2}."
+		"ru"		"{1} убит: {2}."
+		"hu"		"{1} Megölte: {2}."
+                                "chi"                        "{1} KM: {2}."
+	}
+	"WITCH_KILLED"
+	{
+		"#format"	"{1:s}"
+		"en"	                "Witch killed: {1}."
+		"ru"		"Ведьма убита: {1}."
+		"hu"		"Boszorkát megölte: {1}."
+                                "chi"                        "Witch KM: {1}."
+	}
+	"DAMAGE_STRING"
+	{
+		"#format"	"{1:s},{2:N},{3:d}"
+		"en"		"{1}{blue}{2} ({3} dmg)"
+		"ru"	         	"{1}{blue}{2} ({3} урона)"
+                                "chi"                        "{1}{blue}{2} ({3} dmg)"
+	}
+	"WITCH_CROWNED"
+	{
+		"#format"	"{1:N}"
+		"en"		"{blue}{1} killed Witch with one shot!"
+		"ru"		"{blue}{1} убил Ведьму одним выстрелом!"
+		"hu"		"{blue}{1} egy lövéssel megölte a Boszorkát!"
+                                "chi"                        "{blue}{1} 一枪 爆掉了 witch!"
+	}
+	"WITCH_STARTLED_BOT"
+	{
+		"#format"	"{1:N}"
+		"en"		"{blue}{1} startled Witch!"
+		"ru"		"{blue}{1} напугал Ведьму!"
+		"hu"		"{blue}{1} megzavarta a Boszorkát!"
+                                "chi"                         "{blue}{1} 吓到了 Witch，它会尝试击倒附近的所有人，请尽快杀死它!"
+	}
+	"WITCH_STARTLED"
+	{
+		"#format"	"{1:N},{2:s}"
+		"en"		"{blue}{1} ({2}) startled Witch!"
+		"ru"		"{blue}{1} ({2}) напугал Ведьму!"
+		"hu"		"{blue}{1} ({2}) megzavarta a Boszorkát!"
+                                "chi"                         "{blue}{1} ({2}) 吓到了 Witch它会尝试击倒附近的所有人，请尽快杀死它!"
+	}
+	"TANK_REMAINING_HEALTH"
+	{
+		"#format"	"{1:s}"
+		"en"		"Remaining health: {1}."
+		"ru"		"Оставалось здоровья: {1}."
+                                "chi"                        "剩余健康值: {1}."
+	}
+	"TANK_HEALTH_STRING"
+	{
+		"#format"	"{1:s},{2:N},{3:d}"
+		"en"		"{1}{2} ({3})"
+		"ru"		"{1}{2} ({3})"
+                                "chi"	                "{1}{2} ({3})"
+	}
+	"WITCH_REMAINING_HEALTH"
+	{
+		"#format"	"{1:d}"
+		"en"		"Witch had {1} health remaining."
+		"ru"		"У Ведьмы оставалось {1} здоровья."
+                               "chi"		"Witch 剩余 {1} 生命值."
+	}
+	"FRAGS"
+	{
+		"#format"	"{1:s}"
+		"en"		"Frags: {1}."
+		"ru"		"Фраги: {1}."
+                                "chi"                        "击杀数: {1}."
+	}
+	"FRAGS_STRING"
+	{
+		"#format"	"{1:s},{2:s},{3:d}"
+		"en"		"{1}{blue}{2} - {3}"
+		"ru"		"{1}{blue}{2} - {3}"
+                                "chi"                        "{1}{red}{2} - {3}"
+	}
+	"FRAGS_HINT"
+	{
+		"#format"	"{1:d}"
+		"en"		"Frags: {1}"
+		"ru"		"Фраги: {1}"
+                               "chi"                         "击杀数: {1}"
+	}
+}

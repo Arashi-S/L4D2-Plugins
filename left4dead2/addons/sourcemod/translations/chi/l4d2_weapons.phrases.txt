@@ -1,0 +1,218 @@
+"Phrases"
+{
+
+	"smg"
+	{
+		"chi"		"Uzi"
+	}
+	"smg_silenced"
+	{
+		"chi"		"MAC-10"
+	}
+	"smg_mp5"
+	{
+		"chi"		"MP5"
+	}
+
+
+	"rifle"
+	{
+		"chi"		"M16"
+	}
+	"rifle_desert"
+	{
+		"chi"		"SCAR"
+	}
+	"rifle_ak47"
+	{
+		"chi"		"AK-47"
+	}
+	"rifle_sg552"
+	{
+		"chi"		"SG552"
+	}
+	"rifle_m60"
+	{
+		"chi"		"M60"
+	}
+
+	"hunting_rifle"
+	{
+		"chi"		"15连"
+	}
+	"sniper_military"
+	{
+		"chi"		"30连"
+	}
+	"sniper_awp"
+	{
+		"chi"		"AWP"
+	}
+	"sniper_scout"
+	{
+		"chi"		"鸟狙"
+	}
+	
+
+	"pumpshotgun"
+	{
+		"chi"		"泵动式霰弹枪"
+	}
+	"shotgun_chrome"
+	{
+		"chi"		"铬合金霰弹枪"
+	}
+	"autoshotgun"
+	{
+		"chi"		"一代连喷"
+	}
+	"shotgun_spas"
+	{
+		"chi"		"二代连喷"
+	}
+
+
+	"pistol"
+	{
+		"chi"		"P226"
+	}
+	"pistol_magnum"
+	{
+		"chi"		"马格南"
+	}
+	"grenade_launcher"
+	{
+		"chi"		"榴弹发射器"
+	}
+
+
+	"katana"
+	{
+		"chi"		"武士刀"
+	}
+	"fireaxe"
+	{
+		"chi"		"消防斧"
+	}
+	"chainsaw"
+	{
+		"chi"		"电锯"
+	}
+	"baseball_bat"
+	{
+		"chi"		"棒球棒"
+	}
+	"electric_guitar"
+	{
+		"chi"		"电结他"
+	}
+	"tonfa"
+	{
+		"chi"		"警棍"
+	}
+	"machete"
+	{
+		"chi"		"弯刀"
+	}
+	"cricket_bat"
+	{
+		"chi"		"板球棒"
+	}
+	"frying_pan"
+	{
+		"chi"		"平底锅"
+	}
+	"crowbar"
+	{
+		"chi"		"撬棍"
+	}
+	"knife"
+	{
+		"chi"		"CS小刀"
+	}
+	"flamethrower"
+	{
+		"chi"		"喷火器"
+	}
+	"pitchfork"
+	{
+		"chi"		"干草叉"
+	}
+	"shovel"
+	{
+		"chi"		"铲"
+	}
+	"golfclub"
+	{
+		"chi"		"高尔夫球杆"
+	}
+
+
+	"pipe_bomb"
+	{
+		"chi"		"土制炸弹"
+	}
+	"molotov"
+	{
+		"chi"		"燃烧酒瓶"
+	}
+	"vomitjar"
+	{
+		"chi"		"胆汁瓶"
+	}
+	"gascan"
+	{
+		"chi"		"汽油红桶"
+	}
+	"propanetank"
+	{
+		"chi"		"煤气罐"
+	}
+	"fireworkcrate"
+	{
+		"chi"		"烟花箱"
+	}
+	"oxygentank"
+	{
+		"chi"		"氧气瓶"
+	}
+
+	"laser_sight"
+	{
+		"chi"		"红外线"
+	}
+	"explosive_ammo"
+	{
+		"chi"		"高爆子弹"
+	}
+	"upgradepack_explosive"
+	{
+		"chi"		"高爆子弹包"
+	}
+	"incendiary_ammo"
+	{
+		"chi"		"燃烧子弹"
+	}
+	"upgradepack_incendiary"
+	{
+		"chi"		"燃烧子弹包"
+	}
+
+
+	"first_aid_kit"
+	{
+		"chi"		"包"
+	}
+	"adrenaline"
+	{
+		"chi"		"针"
+	}
+	"pain_pills"
+	{
+		"chi"		"药"
+	}
+	"defibrillator"
+	{
+		"chi"		"电鸡器"
+	}
+}

@@ -1,0 +1,839 @@
+"Phrases"
+{
+	"c1m1_hotel"
+	{
+		"en"		"1：旅馆"
+	}
+	"c1m2_streets"
+	{
+		"en"		"2：街道"
+	}
+	"c1m3_mall"
+	{
+		"en"		"3：购物中心"
+	}
+	"c1m4_atrium"
+	{
+		"en"		"4：中厅"
+	}
+	"c2m1_highway"
+	{
+		"en"		"1：高速公路"
+	}
+	"c2m2_fairgrounds"
+	{
+		"en"		"2：游乐场"
+	}
+	"c2m3_coaster"
+	{
+		"en"		"3：过山车"
+	}
+	"c2m4_barns"
+	{
+		"en"		"4：谷仓"
+	}
+	"c2m5_concert"
+	{
+		"en"		"5：音乐会"
+	}
+	"c3m1_plankcountry"
+	{
+		"en"		"1：乡村"
+	}
+	"c3m2_swamp"
+	{
+		"en"		"2：沼泽"
+	}
+	"c3m3_shantytown"
+	{
+		"en"		"3：贫民窟"
+	}
+	"c3m4_plantation"
+	{
+		"en"		"4：种植园"
+	}
+	"c4m1_milltown_a"
+	{
+		"en"		"1：密尔城"
+	}
+	"c4m2_sugarmill_a"
+	{
+		"en"		"2：糖厂"
+	}
+	"c4m3_sugarmill_b"
+	{
+		"en"		"3：逃离工厂"
+	}
+	"c4m4_milltown_b"
+	{
+		"en"		"4：重返小镇"
+	}
+	"c4m5_milltown_escape"
+	{
+		"en"		"5：逃离小镇"
+	}
+	"c5m1_waterfront"
+	{
+		"en"		"1：码头"
+	}
+	"c5m2_park"
+	{
+		"en"		"2：公园"
+	}
+	"c5m3_cemetery"
+	{
+		"en"		"3：墓地"
+	}
+	"c5m4_quarter"
+	{
+		"en"		"4：特区"
+	}
+	"c5m5_bridge"
+	{
+		"en"		"5：桥"
+	}
+	"c6m1_riverbank"
+	{
+		"en"		"1: 河畔"
+	}
+	"c6m2_bedlam"
+	{
+		"en"		"2: 地下通道"
+	}
+	"c6m3_port"
+	{
+		"en"		"3: 港口"
+	}
+	"c7m1_docks"
+	{
+		"en"		"1: 码头"
+	}
+	"c7m2_barge"
+	{
+		"en"		"2: 驳船"
+	}
+	"c7m3_port"
+	{
+		"en"		"3: 港口"
+	}
+	"c8m1_apartment"
+	{
+		"en"		"1: 公寓"
+	}
+	"c8m2_subway"
+	{
+		"en"		"2: 地铁"
+	}
+	"c8m3_sewers"
+	{
+		"en"		"3: 下水道"
+	}
+	"c8m4_interior"
+	{
+		"en"		"4: 医院"
+	}
+	"c8m5_rooftop"
+	{
+		"en"		"5: 屋顶"
+	}
+	"c9m1_alleys"
+	{
+		"en"		"1: 小巷"
+	}
+	"c9m2_lots"
+	{
+		"en"		"2: 卡车停车场"
+	}
+	"c10m1_caves"
+	{
+		"en"		"1: 收费公路"
+	}
+	"c10m2_drainage"
+	{
+		"en"		"2: 水沟"
+	}
+	"c10m3_ranchhouse"
+	{
+		"en"		"3: 教堂"
+	}
+	"c10m4_mainstreet"
+	{
+		"en"		"4: 小镇"
+	}
+	"c10m5_houseboat"
+	{
+		"en"		"5: 码头"
+	}
+	"c11m1_greenhouse"
+	{
+		"en"		"1: 花房"
+	}
+	"c11m2_offices"
+	{
+		"en"		"2: 起重机"
+	}
+	"c11m3_garage"
+	{
+		"en"		"3: 建筑工地"
+	}
+	"c11m4_terminal"
+	{
+		"en"		"4: 航空机场"
+	}
+	"c11m5_runway"
+	{
+		"en"		"5: 飞机跑道"
+	}
+	"c12m1_hilltop"
+	{
+		"en"		"1: 森林"
+	}
+	"c12m2_traintunnel"
+	{
+		"en"		"2: 隧道"
+	}
+	"c12m3_bridge"
+	{
+		"en"		"3: 桥"
+	}
+	"c12m4_barn"
+	{
+		"en"		"4: 火车站"
+	}
+	"c12m5_cornfield"
+	{
+		"en"		"5: 农舍"
+	}
+	"c13m1_alpinecreek"
+	{
+		"en"		"1: 高山小溪"
+	}
+	"c13m2_southpinestream"
+	{
+		"en"		"2: 松木之河"
+	}
+	"c13m3_memorialbridge"
+	{
+		"en"		"3: 纪念大桥"
+	}
+	"c13m4_cutthroatcreek"
+	{
+		"en"		"4: 残酷溪流"
+	}
+	"c14m1_junkyard"
+	{
+		"en"		"1: 教区桥梁"
+	}
+	"c14m2_lighthouse"
+	{
+		"en"		"2: 灯塔"
+	}
+	"2019_M1b"
+	{
+		"en"		"Condo Building"
+	}
+	"2019_M2b"
+	{
+		"en"		"Innercity River"
+	}
+	"2019_M3b"
+	{
+		"en"		"Xen-Corp Offices"
+	}
+	"bsas_m1_barrios"
+	{
+		"en"		"Barrios"
+	}
+	"bsas_m2_adrogue"
+	{
+		"en"		"Adrogué"
+	}
+	"bsas_m3_capital"
+	{
+		"en"		"Capital Federal"
+	}
+	"bsas_m4_costanera"
+	{
+		"en"		"Reserva Ecologica"
+	}
+	"bsas2_m1_barrios"
+	{
+		"en"		"Barrios"
+	}
+	"bsas2_m2_adrogue"
+	{
+		"en"		"Adrogué"
+	}
+	"bsas2_m3_constitucion"
+	{
+		"en"		"Constitucion"
+	}
+	"bsas2_m4_obelisco"
+	{
+		"en"		"Obelisco"
+	}
+	"bsas2_m5_retiro"
+	{
+		"en"		"Retiro"
+	}
+	"bsas2_m6_costanera"
+	{
+		"en"		"Reserva Ecologica"
+	}
+	"msd1_town"
+	{
+		"en"		"Town"
+	}
+	"msd2_gasstation"
+	{
+		"en"		"GasStation"
+	}
+	"msdnew_tccity_newway"
+	{
+		"en"		"City"
+	}
+	"msd3_square"
+	{
+		"en"		"Square"
+	}
+	"l4d2_daybreak01_hotel"
+	{
+		"en"		"1: The Hotel"
+	}
+	"l4d2_daybreak02_coastline"
+	{
+		"en"		"2: The Coastline"
+	}
+	"l4d2_daybreak03_bridge"
+	{
+		"en"		"3: The Bridge"
+	}
+	"l4d2_daybreak04_cruise"
+	{
+		"en"		"4: The Outskirts"
+	}
+	"l4d2_daybreak05_rescue"
+	{
+		"en"		"5: Alcatraz Finale"
+	}
+	"Dead_Series1"
+	{
+		"en"		"Desperate Houseway"
+	}
+	"Dead_Series2"
+	{
+		"en"		"ColdstairCase"
+	}
+	"Dead_Series3"
+	{
+		"en"		"SmallEvill"
+	}
+	"Dead_Series4"
+	{
+		"en"		"Band of Rushers"
+	}
+	"r_concert"
+	{
+		"en"		"1: Infiltration I"
+	}
+	"r_barns"
+	{
+		"en"		"2: Infiltration II"
+	}
+	"r_coaster"
+	{
+		"en"		"3: Enemy Sighted"
+	}
+	"r_fairgrounds"
+	{
+		"en"		"4: Keep Moving"
+	}
+	"r_highway"
+	{
+		"en"		"5: Long Way Round"
+	}
+	"r_atrium"
+	{
+		"en"		"6: Hostages"
+	}
+	"r_mall"
+	{
+		"en"		"7: Stealth Op"
+	}
+	"r_streets"
+	{
+		"en"		"8: DeJa Vu"
+	}
+	"r_hotel"
+	{
+		"en"		"9: Reunion"
+	}
+	"r_nomercy"
+	{
+		"en"		"10: An Old Friend"
+	}
+	"vr_missions"
+	{
+		"en"		"Bonus: VR Missions"
+	}
+	"cdta_01detour"
+	{
+		"en"		"DTA1 Detour"
+	}
+	"cdta_02road"
+	{
+		"en"		"DTA2 Hill"
+	}
+	"cdta_03warehouse"
+	{
+		"en"		"DTA3 Warehouse"
+	}
+	"cdta_04onarail"
+	{
+		"en"		"DTA4 On A Rail"
+	}
+	"cdta_05finalroad"
+	{
+		"en"		"DTA5 Final Road"
+	}
+	"l4d2_diescraper1_apartment_361"
+	{
+		"en"		"Apartment complex"
+	}
+	"l4d2_diescraper2_streets_361"
+	{
+		"en"		"Downtown military outpost"
+	}
+	"l4d2_diescraper3_mid_361"
+	{
+		"en"		"The Skymall"
+	}
+	"l4d2_diescraper4_top_361"
+	{
+		"en"		"The top suites"
+	}
+	"esc_jailbreak"
+	{
+		"en"		"Jailbreak"
+	}
+	"esc_sunken_park"
+	{
+		"en"		"Sunken Park"
+	}
+	"esc_bypass"
+	{
+		"en"		"Bypass"
+	}
+	"esc_fly_me_to_the_moon"
+	{
+		"en"		"Fly me to the Moon"
+	}
+	"hcw1_aircrash"
+	{
+		"en"		"1: AirCrash"
+	}
+	"hcw2_rivermotel"
+	{
+		"en"		"2: RiverMotel"
+	}
+	"hcw3_outskirts"
+	{
+		"en"		"3: OutSkirts"
+	}
+	"hcw4_cityhall"
+	{
+		"en"		"4: CityHall"
+	}
+	"hcw5_bombshelter"
+	{
+		"en"		"5: BombShelter"
+	}
+	"hkboxtest"
+	{
+		"en"		"Tsim Sha Tsui"
+	}
+	"hkboxtest2"
+	{
+		"en"		"Avenue of Stars"
+	}
+	"hkboxtest3"
+	{
+		"en"		"City Park Escape"
+	}
+	"l4d_ihm01_forest"
+	{
+		"en"		"1: Lost in the Woods"
+	}
+	"l4d_ihm02_manor"
+	{
+		"en"		"2: Climbing the Manor"
+	}
+	"l4d_ihm03_underground"
+	{
+		"en"		"3: The Underground Way"
+	}
+	"l4d_ihm04_lumberyard"
+	{
+		"en"		"4: Lumberyard Evacuation"
+	}
+	"l4d_ihm05_lakeside"
+	{
+		"en"		"5: Lakeside Finale"
+	}
+	"bt1"
+	{
+		"en"		"The Suburbs"
+	}
+	"bt2"
+	{
+		"en"		"Hospital Rendezvous"
+	}
+	"bt3"
+	{
+		"en"		"Shopping With The Dead"
+	}
+	"bt4"
+	{
+		"en"		"City"
+	}
+	"bt5"
+	{
+		"en"		"New Dawn"
+	}
+	"nh2c1_port_c"
+	{
+		"en"		"NH2: Chapter 1"
+	}
+	"nh2c2_port_c"
+	{
+		"en"		"NH2: Chapter 2"
+	}
+	"nh2c3_port_c"
+	{
+		"en"		"NH2: Chapter 3"
+	}
+	"nh2c4_port_c"
+	{
+		"en"		"NH2: Chapter 4"
+	}
+	"nh2c5_port_c"
+	{
+		"en"		"NH2: Chapter 5"
+	}
+	"nt01_mansion"
+	{
+		"en"		"Blockade"
+	}
+	"nt02_haunts"
+	{
+		"en"		"Haunted Mansion"
+	}
+	"nt03_moria"
+	{
+		"en"		"Moria"
+	}
+	"nt04_jungleruins"
+	{
+		"en"		"Jungle Ruins"
+	}
+	"nt05_wake"
+	{
+		"en"		"Wake"
+	}
+	"qe2_ep1"
+	{
+		"en"		"Episode 1"
+	}
+	"qe2_ep2"
+	{
+		"en"		"Episode 2"
+	}
+	"qe2_ep3"
+	{
+		"en"		"Episode 3"
+	}
+	"qe2_ep4"
+	{
+		"en"		"Episode 4"
+	}
+	"qe2_ep5"
+	{
+		"en"		"Episode 5"
+	}
+	"qe_1_cliche"
+	{
+		"en"		"Cliche"
+	}
+	"qe_2_remember_me"
+	{
+		"en"		"Remember me"
+	}
+	"qe_3_unorthodox_paradox"
+	{
+		"en"		"Unorthodox Paradox"
+	}
+	"qe_4_ultimate_test"
+	{
+		"en"		"The Ultimate Test"
+	}
+	"saltwell_1_d"
+	{
+		"en"		"Finding The Park"
+	}
+	"saltwell_2_d"
+	{
+		"en"		"Militarised Zone"
+	}
+	"saltwell_3_d"
+	{
+		"en"		"The Lake"
+	}
+	"saltwell_4_d"
+	{
+		"en"		"SaltHell Towers"
+	}
+	"saltwell_5_d"
+	{
+		"en"		"The Crematorium"
+	}
+	"l4d2_stadium1_apartment"
+	{
+		"en"		"The Apartment"
+	}
+	"l4d2_stadium2_riverwalk"
+	{
+		"en"		"The Riverwalk"
+	}
+	"l4d2_stadium3_city1"
+	{
+		"en"		"The Law"
+	}
+	"l4d2_stadium4_city2"
+	{
+		"en"		"The City"
+	}
+	"l4d2_stadium5_stadium"
+	{
+		"en"		"The Stadium"
+	}
+	"l4d2_vs_stadium2_riverwalk"
+	{
+		"en"		"The Riverwalk Versus"
+	}
+	"l4d2_sv_stadium2_riverwalk"
+	{
+		"en"		"The Riverwalk Survival"
+	}
+	"l4d2_sv_stadium3_city1"
+	{
+		"en"		"The Law Survival"
+	}
+	"l4d2_sv_stadium4_city2"
+	{
+		"en"		"The City Survival"
+	}
+	"castle_map_01"
+	{
+		"en"		"The Arrive"
+	}
+	"prison_map_02"
+	{
+		"en"		"To the Depths"
+	}
+	"lab_map_03"
+	{
+		"en"		"Death lab"
+	}
+	"cemetery_map_04"
+	{
+		"en"		"Secrets in the dark"
+	}
+	"theend_map_05"
+	{
+		"en"		"We are alive"
+	}
+	"persecucion"
+	{
+		"en"		"There is only one way"
+	}
+	"persecucion_versus"
+	{
+		"en"		"There is only one way - Versus"
+	}
+	"persecucion_survival"
+	{
+		"en"		"There is only one way - Survival"
+	}
+	"l4d2_timemachine_01"
+	{
+		"en"		"1: Mountain Lab"
+	}
+	"l4d2_timemachine_02"
+	{
+		"en"		"2: First Paradox"
+	}
+	"l4d2_timemachine_03"
+	{
+		"en"		"3: Second Paradox"
+	}
+	"l4d2_timemachine_04"
+	{
+		"en"		"4: Townhouse Finale"
+	}
+	"rtf_train"
+	{
+		"en"		"Easy Rider"
+	}
+	"srocchurch"
+	{
+		"en"		"neighborhood"
+	}
+	"plaza_espana"
+	{
+		"en"		"plaza"
+	}
+	"maria_cristina"
+	{
+		"en"		"avenue"
+	}
+	"mnac"
+	{
+		"en"		"gardens"
+	}
+	"wfp1_track"
+	{
+		"en"		"Trainyard"
+	}
+	"wfp2_horn"
+	{
+		"en"		"Cave"
+	}
+	"wfp3_mill"
+	{
+		"en"		"Industrial Warehouses"
+	}
+	"wfp4_commstation"
+	{
+		"en"		"Radio Stations"
+	}
+	"yichang_01"
+	{
+		"en"		"逃离"
+	}
+	"yichang_02"
+	{
+		"en"		"医院"
+	}
+	"yichang_03"
+	{
+		"en"		"CBD"
+	}
+	"yichang_04"
+	{
+		"en"		"夷陵广场"
+	}
+	"bjrtcre_m1"
+	{
+		"en"		"Freight Yard"
+	}
+	"bjrtcre_m2_left"
+	{
+		"en"		"Restless Riverbank"
+	}
+	"bjrtcre_m2_right"
+	{
+		"en"		"Bright Avenue"
+	}
+	"bjrtcre_m3"
+	{
+		"en"		"Crescent City"
+	}
+	"bjrtcre_m4"
+	{
+		"en"		"Southern Terminal"
+	}
+	"bjrtcre_m5"
+	{
+		"en"		"The Last Journey"
+	}
+	"zc_m1"
+	{
+		"en"		"公园"
+	}
+	"zc_m2"
+	{
+		"en"		"街道"
+	}
+	"zc_m3"
+	{
+		"en"		"城中村"
+	}
+	"zc_m4"
+	{
+		"en"		"小巷"
+	}
+	"zc_m5"
+	{
+		"en"		"立交桥"
+	}
+	"dkr_m1_motel"
+	{
+		"en"		"The Motel"
+	}
+	"dkr_m2_carnival"
+	{
+		"en"		"The Carnival"
+	}
+	"dkr_m3_tunneloflove"
+	{
+		"en"		"The Tunnel of Love"
+	}
+	"dkr_m4_ferris"
+	{
+		"en"		"The Ferris Wheel"
+	}
+	"dkr_m5_stadium"
+	{
+		"en"		"The Stadium"
+	}
+	"cotd01_apartments_redux"
+	{
+		"en"		"1: Apartments"
+	}
+	"cotd02_streets_redux"
+	{
+		"en"		"2: Streets"
+	}
+	"cotd03_mall_redux"
+	{
+		"en"		"3: Mall"
+	}
+	"cotd04_rooftop_redux"
+	{
+		"en"		"4: Rooftop"
+	}
+	"cotd05_rooftopsurvival_redux"
+	{
+		"en"		"Original Rooftop"
+	}
+	"dm1_suburbs"
+	{
+		"en"		"1: Suburbs"
+	}
+	"dm2_blastzone"
+	{
+		"en"		"2: Blast Zone"
+	}
+	"dm3_canyon"
+	{
+		"en"		"3: Canyon"
+	}
+	"dm4_caves"
+	{
+		"en"		"4: Caves"
+	}
+	"dm5_summit"
+	{
+		"en"		"5: Summit"
+	}
+}

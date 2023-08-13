@@ -1,0 +1,7 @@
+ServerName
+{
+	"23333"
+	{
+		"baseName"	"[HspAF/Test]"
+	}
+}

@@ -1,0 +1,30 @@
+"CountryShow"
+{
+	// {PLAYERNAME}: player name
+	// {STEAMID}: player STEAMID
+	// {PLAYERCOUNTRY}: player country name
+	// {PLAYERCOUNTRYSHORT}: player country short name
+	// {PLAYERCOUNTRYSHORT3}: player country another short name
+	// {PLAYERCITY}: player city name
+	// {PLAYERREGION}: player region name
+	// {PLAYERIP}: player IP
+	// {PLAYERTYPE}: player is Adm or not
+	
+	// {default}: white
+	// {green}: orange
+	// {olive}: green
+	// {lightgreen}: lightgreen
+	// {red}: red
+	// {blue}: blue
+	// Warning: {lightgreen}、{red}、{blue}, 2 of 3 colors can not be used at the same sentence
+	"messages"  //display message to everyone (Non-admin)
+	{
+		"playerjoin"		"{default}[{olive}Join{default}] {blue}{PLAYERTYPE} {green}{PLAYERNAME} {blue}加入游戏{default}. ({green}来自{blue}{PLAYERREGION} {PLAYERCITY} {default})"
+		"playerdisc"		"{default}[{olive}Join{default}] {lightgreen}{PLAYERTYPE} {green}{PLAYERNAME} {lightgreen}润了{default}. ({green}{DISC_REASON}{default})"
+	}
+	"messages_admin"  //only display message to adm
+	{
+		"playerjoin"		"{default}[{olive}Join{default}] {blue}{PLAYERTYPE} {green}{PLAYERNAME} {blue}已连接{default}. ({green} |{PLAYERIP}|, <{STEAMID}>, {PLAYERREGION} {PLAYERCITY} {default}) "
+		"playerdisc"		"{default}[{olive}Join{default}] {lightgreen}{PLAYERTYPE} {green}{PLAYERNAME} {lightgreen}润了{default}. ({green}{DISC_REASON}{default})"
+	}
+}

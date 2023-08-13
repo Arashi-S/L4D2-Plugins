@@ -1,0 +1,56 @@
+"Phrases"
+{
+	"CA Admin"
+	{
+		"chi"			"管理员"
+	}
+	"CA Public"
+	{
+		"chi"			"玩家"
+	}
+	"LAN City Desc"
+	{
+		"chi"			"IP"
+	}
+	"LAN Region Desc"
+	{
+		"chi"			"a Local Subnet"
+	}
+	"LAN Country Desc"
+	{
+		"chi"			"a Local Area Network"
+	}
+	
+	"LAN Country Short"
+	{
+		"chi"			"LN"
+	}
+	
+	"LAN Country Short 3"
+	{
+		"chi"			"LAN"
+	}
+	
+	"Unknown City Desc"
+	{
+		"chi"			"Unknown"
+	}
+	"Unknown Region Desc"
+	{
+		"chi"			"Unknown"
+	}
+	"Unknown Country Desc"
+	{
+		"chi"			"Unknown"
+	}
+	
+	"Unknown Country Short"
+	{
+		"chi"			"Unknown"
+	}
+	
+	"Unknown Country Short 3"
+	{
+		"chi"			"Unknown"
+	}
+}

@@ -1,0 +1,72 @@
+"Phrases"
+{
+	"sm_join"
+	{
+		"chi"			"旁观加入游戏"
+	}
+
+	"sm_afk"
+	{
+		"chi"			"闲置"
+	}
+
+	"sm_chmap"
+	{
+		"chi"			"投票换图"
+	}
+
+	"sm_drop"
+	{
+		"chi"			"丢弃手中武器"
+	}
+
+	"sm_teams"
+	{
+		"chi"			"团队状态面板"
+	}
+
+	"sm_vote"
+	{
+		"chi"			"乱七八糟的投票"
+	}
+
+	"sm_3rd"
+	{
+		"chi"			"第三人称"
+	}
+
+	"sm_tankhud"
+	{
+		"chi"			"对旁观者的TankHUD"
+	}
+
+	"sm_h 3034"
+	{
+		"chi"			"变身!!!"
+	}
+
+	"sm_nextstage"
+	{
+		"chi"			"解决可能出现的卡关问题"
+	}
+
+	"sm_run"
+	{
+		"chi"			"润出服务器"
+	}
+	
+	"sm_hook"
+	{
+		"chi"			"获得一个抓钩"
+	}
+	
+	"sm_rope"
+	{
+		"chi"			"获得一个绳子"
+	}
+
+	"MENU"
+	{
+		"chi"			"菜单"
+	}
+}

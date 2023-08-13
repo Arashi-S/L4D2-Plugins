@@ -1,0 +1,69 @@
+"Cfgs"
+{
+	"服务器选项"
+	{
+		"sm_restartmap"
+		{
+			"message" "重置当前地图"
+		}
+	}
+	"[ReLoad]Tank防卡"
+	{
+		"exec Vote/TankFK/on.cfg"
+		{
+			"message" "开启Tank防卡"
+		}
+		"exec Vote/TankFK/off.cfg"
+		{
+			"message" "关闭Tank防卡"
+		}
+	}
+	"[ReLoad]多特"
+	{
+		"exec Vote/special/on.cfg"
+		{
+			"message" "开启多特"
+		}
+		"exec Vote/special/off.cfg"
+		{
+			"message" "关闭多特"
+		}
+	}
+	"[ReLoad]自动解控"
+	{
+		"exec Vote/Autokill/on.cfg"
+		{
+			"message" "开启自动解控"
+		}
+		"exec Vote/Autokill/off.cfg"
+		{
+			"message" "关闭自动解控"
+		}
+	}
+	"推推乐"
+	{
+		"exec Vote/shove/on.cfg"
+		{
+			"message" "开启推推乐"
+		}
+		"exec Vote/shove/off.cfg"
+		{
+			"message" "关闭推推乐"
+		}
+	}
+	"[ReLoad]Hud 更换"
+	{
+		"exec Vote/Hud/miuwiki.cfg"
+		{
+			"message" "[默认]启用Miuwiki Hud"
+		}
+		"exec Vote/Hud/Ems.cfg"
+		{
+			"message" "启用EMS Hud"
+		}
+		"exec Vote/Hud/NanakaNeko.cfg"
+		{
+			"message" "启用奈's Hud"
+		}
+	}
+}
