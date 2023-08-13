@@ -1,0 +1,10 @@
+# L4D2 Plugins 
+
+### 前情提要
+* 这是我自己搓的一套插件包，放到猫网当网盘用防丢，也方便自己更新插件（因为在本地更新太乱力）
+* 包含的插件来自五湖四海的各位dalao，总之没一个是我自己写的
+
+### 请注意，上传的这个包只支持Linux
+* 如果想在Windows上使用请手动更换Windows版的 `SourceMod` 及相关拓展
+* 如： `builtinvotes`、`sm-ripext`、`SteamWorks`、`Tickrate-Enabler`、`sourcescramble`、`voicehook`、`l4dtoolz`、`mmsource`、`Source:Stripper`等等，不过有些拓展可能在包里根本没用到
+* 并删除插件： `command_buffer.smx` （解决Linux不加载插件CFG）
