@@ -9,4 +9,3 @@
 * 如`builtinvotes``sm-ripext``SteamWorks``Tickrate-Enabler``sourcescramble`
 * `voicehook``l4dtoolz``mmsource``Source:Stripper`等等
 * 并删除插件： `command_buffer.smx` （解决Linux不加载插件CFG）
-* 插件`A2S_Info_Edit.smx` 貌似会导致服务器在Linux系统上无法被公开，现已卸载
