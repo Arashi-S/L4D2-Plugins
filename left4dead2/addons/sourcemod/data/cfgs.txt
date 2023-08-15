@@ -66,4 +66,15 @@
 			"message" "启用奈's Hud"
 		}
 	}
+	"[ReLoad] 环境"
+	{
+		"exec Vote/env/on.cfg"
+		{
+			"message" "开启大雾环境"
+		}
+		"exec Vote/shove/off.cfg"
+		{
+			"message" "关闭大雾环境"
+		}
+	}
 }
