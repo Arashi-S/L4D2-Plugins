@@ -68,11 +68,11 @@
 	}
 	"[ReLoad] 环境"
 	{
-		"exec Vote/env/on.cfg"
+		"exec Vote/Env/On.cfg"
 		{
 			"message" "开启大雾环境"
 		}
-		"exec Vote/shove/off.cfg"
+		"exec Vote/Env/Off.cfg"
 		{
 			"message" "关闭大雾环境"
 		}
