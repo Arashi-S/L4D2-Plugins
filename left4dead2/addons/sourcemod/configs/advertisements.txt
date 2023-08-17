@@ -13,7 +13,7 @@
 	"3"
 	{
 		"type"		"S"
-		"text"		"{GREEN}!Afk{LIGHTGREEN} 闲置 {GREEN}!join{LIGHTGREEN} 加入幸存者{GREEN}!tkbot{LIGHTGREEN} 接管指定的Bot {GREEN} !run {LIGHTGREEN} 润出服务器"
+		"text"		"{GREEN}!Afk{LIGHTGREEN} 闲置 {GREEN}!join{LIGHTGREEN} 加入幸存者{GREEN}!run {LIGHTGREEN} 润出服务器"
 	}
 	"4"
 	{
@@ -48,7 +48,7 @@
 	"10"
 	{
 		"type"		"S"
-		"text"		"{GREEN}输入{LIGHTGREEN} !chmap{GREEN}来更换地图{LIGHTGREEN} 在旁观时输入{LIGHTGREEN} !teams{GREEN}打开团队菜单获得更好的观战体验{GREEN}!vote{LIGHTGREEN}发起一些投票 "
+		"text"		"{GREEN}输入{LIGHTGREEN} !chmap{GREEN}来更换地图{LIGHTGREEN} 在旁观时输入{LIGHTGREEN} !teams{GREEN}打开团队菜单获得更好的观战体验{GREEN}!V{LIGHTGREEN}发起一些投票 "
 	}
 	"11"
 	{
@@ -73,11 +73,16 @@
 	"15"
 	{
 		"type"		"S"
-		"text"		"{GREEN}肾上腺素的效果异常珍贵{LIGHTGREEN} 在期间请尽可能多输出来提升时间"
+		"text"		"{GREEN}肾上腺素的效果异常珍贵{LIGHTGREEN} 在期间请尽可能{GREEN}多输出来提升时间"
 	}
 	"16"
 	{
 		"type"		"S"
-		"text"		"{GREEN}贴墙在跳跃时按{LIGHTGREEN} E{GREEN}键就可以爬墙，但请不要爬的太高哦~"
+		"text"		"{GREEN}贴墙在跳跃时按{LIGHTGREEN}E{GREEN}键就可以爬墙，{LIGHTGREEN}但请不要爬的太高哦~"
+	}
+	"17"
+	{
+		"type"		"S"
+		"text"		"{GREEN}可在聊天框输入{LIGHTGREEN}!vk{GREEN}投票踢出{LIGHTGREEN}捣乱玩家"
 	}
 }
