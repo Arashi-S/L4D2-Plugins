@@ -53,7 +53,7 @@
 	"11"
 	{
 		"type"		"S"
-		"text"		"{GREEN}可重复按主武器、医疗、药品槽位对应{LIGHTGREEN}数字快捷键{GREEN}拾取{LIGHTGREEN}第二件物品"
+		"text"		"{GREEN}本服删除了{LIGHTGREEN}挂边的判定{GREEN}容易狡猾的老屁股们{LIGHTGREEN}别再指望队友了"
 	}
 	"12"
 	{
