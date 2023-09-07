@@ -40,6 +40,17 @@
 			"message" "关闭自动解控"
 		}
 	}
+	"反伤系统"
+	{
+		"exec Vote/Fs/Fs.cfg"
+		{
+			"message" "开启反伤"
+		}
+		"exec Vote/Fs/No_Fs.cfg"
+		{
+			"message" "关闭反伤"
+		}
+	}
 	"推推乐"
 	{
 		"exec Vote/shove/on.cfg"
@@ -75,6 +86,17 @@
 		"exec Vote/Env/Off.cfg"
 		{
 			"message" "关闭大雾环境"
+		}
+	}
+	"刷特系统配置"
+	{
+		"exec Vote/Special_Num/Hard_Special.cfg"
+		{
+			"message" "Hard"
+		}
+		"exec Vote/Special_Num/Common_Special.cfg"
+		{
+			"message" "Easy"
 		}
 	}
 }
