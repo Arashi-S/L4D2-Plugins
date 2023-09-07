@@ -1,7 +1,15 @@
 ServerName
 {
-	"23333"
+	"40014"
 	{
-		"baseName"	"[HspAF/Test]"
+		"baseName"	"[HspAF#1] 逛街服"
+	}
+	"40018"
+	{
+		"baseName"	"[HspAF#3] 逛街服"
+	}
+	"20011"
+	{
+		"baseName"	"[HspAF#2] 逛街服"
 	}
 }
