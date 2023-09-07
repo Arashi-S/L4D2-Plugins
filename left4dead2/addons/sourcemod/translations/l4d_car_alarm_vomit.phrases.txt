@@ -1,0 +1,50 @@
+/*
+	******************************************************************************************************************************************************
+
+	You can display phrases in chat with color using any of the methods below:
+
+	Using color codes:
+		•  // Default (use instead of \x01), Alt + 01 Keyboard Shortcut
+		•  // Light Green (use instead of \x03), Alt + 03 Keyboard Shortcut
+		•  // Orange (use instead of \x04), Alt + 04 Keyboard Shortcut
+		•  // Olive (use instead of \x05), Alt + 05 Keyboard Shortcut
+
+	or
+
+	Using color tags:
+		• {default} // Default (use instead of \x01)
+		• {lightgreen} // Light Green (use instead of \x03)
+		• {orange} // Orange (use instead of \x04)
+		• {olive} // Green (use instead of \x05)
+
+	******************************************************************************************************************************************************
+*/
+
+"Phrases"
+{
+	"Activator"
+	{
+		"en"		"{lightgreen}You {olive}triggered the {orange}car alarm{olive} and will be {lightgreen}boomed{olive} as {orange}punishment{olive}"
+		"es"		"{lightgreen}Usted {olive}ha activado la {orange}alarma del coche{olive} y serás {lightgreen}vomitado{olive} como {orange}castigo{olive}"
+		"hu"		"{lightgreen}Te {olive}beindítottad a {orange}kocsi riasztóját {olive}és ezért {lightgreen}büntetésből {olive}le leszel {orange}hányva{olive}"
+		"jp"		"{lightgreen}あなた{olive}触発した{orange}車の警報{olive}，召喚{lightgreen}boomed{olive}として {orange}惩罚{olive}"
+		"pt"		"{lightgreen}Você {olive}disparou o {orange}alarme do carro{olive} e será {lightgreen}boomado{olive} como {orange}punição{olive}"
+		"pt_p"		"{lightgreen}Você {olive}disparou o {orange}alarme do carro{olive} e será {lightgreen}boomado{olive} como {orange}punição{olive}"
+		"ru"		"{lightgreen}Вы {olive}активировали {orange}сигнализацию{olive} и в {orange}наказание{olive} будете {lightgreen}заблёваны{olive}"
+		"chi"		"{lightgreen}你{olive}触发了{orange}汽车报警{olive}，召唤{lightgreen}boomed{olive}作为 {orange}惩罚{olive}"
+		"zho"		"{lightgreen}你{olive}觸發了{orange}汽車報警{olive}，召喚{lightgreen}boomed{olive}作為 {orange}懲罰{olive}"
+	}
+	"Others"
+	{
+		"#format"	"{1:N}"
+		"en"		"{lightgreen}{1} {olive}triggered the {orange}car alarm{olive} and will be {lightgreen}boomed{olive} as {orange}punishment{olive}"
+		"es"		"{lightgreen}{1} {olive}ha activado la {orange}alarma del coche{olive} y serás {lightgreen}vomitado{olive} como {orange}castigo{olive}"
+		"hu"		"{lightgreen}{1} {olive}beindította a {orange}kocsi riasztóját {olive}és ezért {lightgreen}büntetésből {olive}le lesz {orange}hányva{olive}"
+		"jp"		"{lightgreen}{1} {olive}触発した {orange}車の警報{olive} ，召喚 {lightgreen}boomed{olive}として {orange}罰する{olive}"
+		"pt"		"{lightgreen}{1} {olive}disparou o {orange}alarme do carro{olive} e será {lightgreen}boomado{olive} como {orange}punição{olive}"
+		"pt_p"		"{lightgreen}{1} {olive}disparou o {orange}alarme do carro{olive} e será {lightgreen}boomado{olive} como {orange}punição{olive}"
+		"ru"		"{lightgreen}{1} {olive}активировал {orange}сигнализацию{olive} и в {orange}наказание{olive} будет {lightgreen}заблёван{olive}"
+		"chi"		"{lightgreen}{1} {olive}触发了 {orange}汽车报警{olive} ，召唤 {lightgreen}boomed{olive}作为 {orange}惩罚{olive}"
+		"zho"		"{lightgreen}{1} {olive}觸發了 {orange}汽車報警{olive} ，召喚 {lightgreen}boomed{olive}作為 {orange}懲罰{olive}"
+	}
+}
