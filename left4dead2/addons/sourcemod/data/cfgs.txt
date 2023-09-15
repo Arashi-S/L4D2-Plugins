@@ -99,4 +99,15 @@
 			"message" "Easy"
 		}
 	}
+	"门"
+	{
+		"exec Vote/safe_room_door/Door.cfg"
+		{
+			"message" "关闭暴力开门"
+		}
+		"exec Vote/safe_room_door/No_Door.cfg"
+		{
+			"message" "启用暴力开门"
+		}
+	}
 }
