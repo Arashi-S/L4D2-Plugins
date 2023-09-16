@@ -1,1 +1,26 @@
-﻿Make something there
+<!DOCTYPE html>
+
+<html>
+     <head>
+	     <title>TODO supply a title</title>
+		 <meta charset="UTF-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		 
+		 <style>
+		     body {
+			      background-image: url('图片URL');
+				  background-repeat: no-repeat;
+				  background-size: 100% auto;
+			 }
+				  
+			 .content {
+				 color: #000000;
+				 text-align: center;
+				 font-size: 32px;
+			 }
+		 </style>
+	 </head>
+	 <body>
+	     <div class="content"><b></b></div>
+	 </body>
+</html>
