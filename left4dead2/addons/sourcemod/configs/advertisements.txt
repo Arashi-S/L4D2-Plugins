@@ -23,7 +23,7 @@
 	"5"
 	{
 		"type"		"S"
-		"text"		"{GREEN}聊天框输入{LIGHTGREEN}!menu{GREEN}使用一些好玩的东西"
+		"text"		"{GREEN}聊天框输入{LIGHTGREEN}!menu{GREEN}打开玩家菜单"
 	}
 	"6"
 	{
@@ -43,39 +43,34 @@
 	"9"
 	{
 		"type"		"S"
-		"text"		"{GREEN}本服会对安全屋仍火的玩家给予{LIGHTGREEN}神奇的奖励{GREEN}所以请管好你手中的{LIGHTGREEN}火瓶"
+		"text"		"{GREEN}输入{LIGHTGREEN} !chmap{GREEN}来更换地图{LIGHTGREEN} 在旁观时输入{LIGHTGREEN} !teams{GREEN}打开团队菜单获得更好的观战体验{GREEN}"
 	}
 	"10"
 	{
 		"type"		"S"
-		"text"		"{GREEN}输入{LIGHTGREEN} !chmap{GREEN}来更换地图{LIGHTGREEN} 在旁观时输入{LIGHTGREEN} !teams{GREEN}打开团队菜单获得更好的观战体验{GREEN}"
+		"text"		"{GREEN}本服删除了{LIGHTGREEN}挂边的判定{GREEN}容易狡猾的老屁股们{LIGHTGREEN}别再指望队友了"
 	}
 	"11"
 	{
 		"type"		"S"
-		"text"		"{GREEN}本服删除了{LIGHTGREEN}挂边的判定{GREEN}容易狡猾的老屁股们{LIGHTGREEN}别再指望队友了"
+		"text"		"{GREEN}输入{LIGHTGREEN} !3rd{GREEN}切换第三人称"
 	}
 	"12"
 	{
 		"type"		"S"
-		"text"		"{GREEN}输入{LIGHTGREEN} !3rd{GREEN}切换第三人称"
+		"text"		"{GREEN}大好人队友总是给你绿血打包？{LIGHTGREEN} 可在治疗时按{GREEN}跳跃键阻止打包"
 	}
 	"13"
 	{
 		"type"		"S"
-		"text"		"{GREEN}大好人队友总是给你绿血打包？{LIGHTGREEN} 可在治疗时按{GREEN}跳跃键阻止打包"
+		"text"		"{GREEN}发现外挂玩家可以加群联系我{LIGHTGREEN} 我会尽我所能维持良好游戏环境"
 	}
 	"14"
 	{
 		"type"		"S"
-		"text"		"{GREEN}发现外挂玩家可以加群联系我{LIGHTGREEN} 我会尽我所能维持良好游戏环境"
-	}
-	"15"
-	{
-		"type"		"S"
 		"text"		"{GREEN}贴墙在跳跃时按{LIGHTGREEN}E{GREEN}键就可以爬墙，{LIGHTGREEN}但请不要爬的太高哦~"
 	}
-	"16"
+	"15"
 	{
 		"type"		"S"
 		"text"		"{GREEN}可在聊天框输入{LIGHTGREEN}!vk{GREEN}投票踢出{LIGHTGREEN}捣乱玩家"
