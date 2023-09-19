@@ -7,7 +7,7 @@
 			"message" "重置当前地图"
 		}
 	}
-	"[ReLoad]Tank防卡"
+	"Tank防卡"
 	{
 		"exec Vote/TankFK/on.cfg"
 		{
