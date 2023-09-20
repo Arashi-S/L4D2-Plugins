@@ -1,8 +1,8 @@
 "Phrases"
 {
-	"sm_join"
+	"sm_rpg"
 	{
-		"chi"			"旁观加入游戏"
+		"chi"			"小型购物商店"
 	}
 
 	"sm_vk"
