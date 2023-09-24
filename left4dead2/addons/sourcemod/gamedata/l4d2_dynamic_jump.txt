@@ -1,0 +1,98 @@
+"Games"
+{
+	"left4dead2"
+	{
+		"Offsets"
+		{
+			"CBaseEntity::MyNextBotPointer"
+			{
+				"windows" "81"
+				"linux" "82"
+			}
+			
+			"INextBot::GetLocomotionInterface"
+			{
+				"windows" "47"
+				"linux" "48"
+			}
+			
+			"INextBot::GetBodyInterface"
+			{
+				"windows" "48"
+				"linux" "49"
+			}
+			
+			"ILocomotion::JumpAcrossGap"
+			{
+				"windows" "47"
+				"linux" "48"
+			}
+
+			"ILocomotion::IsClimbingOrJumping"
+			{
+				"windows" "49"
+				"linux" "50"
+			}
+			
+			"ILocomotion::GetFeet"
+			{
+				"windows" "74"
+				"linux" "75"
+			}
+			
+			"INextBotEventResponder::OnLeaveGround"
+			{
+				"windows" "4"
+				"linux" "5"
+			}
+			
+			"IBody::StartActivity"
+			{
+				"windows" "53"
+				"linux" "54"
+			}
+			
+			"IBody::GetHullMins"
+			{
+				"windows" "73"
+				"linux" "74"
+			}
+			
+			"IBody::GetHullMaxs"
+			{
+				"windows" "74"
+				"linux" "75"
+			}
+			
+			"PathFollower::IsDiscontinuityAhead"
+			{
+				"windows" "31"
+				"linux" "32"
+			}
+			
+			"Path::GetCurrentGoal"
+			{
+				"windows" "8"
+				"linux" "9"
+			}
+			
+			"Path::NextSegment"
+			{
+				"windows" "21"
+				"linux" "22"
+			}
+			
+			"Path::IsValid"
+			{
+				"windows" "16"
+				"linux" "17"
+			}
+			
+			"PathFollower::Invalidate"
+			{
+				"windows" "17"
+				"linux" "18"
+			}
+		}
+	}
+}
