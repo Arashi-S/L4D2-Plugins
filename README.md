@@ -5,7 +5,5 @@
 * 包含的插件来自五湖四海的各位dalao，总之没一个是我自己写的
 
 ### 请注意，上传的这个包只支持Linux
-* 如果想在Windows上使用请手动更换Windows版的 `SourceMod` 及相关拓展
-* 如`builtinvotes``sm-ripext``SteamWorks``Tickrate-Enabler``sourcescramble`
-* `voicehook``l4dtoolz``mmsource``Source:Stripper`等等
+* 如果想在Windows上使用请手动更换Windows版的 `SourceMod` 及被使用的相关拓展
 * 并删除插件： `command_buffer.smx` （解决Linux不加载插件CFG）
