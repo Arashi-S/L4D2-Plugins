@@ -6,7 +6,7 @@
                 "es"		"Jugadores Hablando:"
                 "pt"		"Jogadores Falando:"
 		"ru"		"Игроки говорят:"
-		"zho"		"玩家MIC:"
-		"chi"		"玩家语音:"
+		"zho"		"ta正在开麦BB:"
+		"chi"		"ta正在开麦BB:"
 	}
 }
