@@ -18,6 +18,17 @@
 			"message" "关闭Tank防卡"
 		}
 	}
+	"Alone"
+	{
+		"exec Vote/Alone/on.cfg"
+		{
+			"message" "开启单人装逼模式"
+		}
+		"exec Vote/Alone/off.cfg"
+		{
+			"message" "开启多人运动模式"
+		}
+	}
 	"[ReLoad]多特"
 	{
 		"exec Vote/special/on.cfg"
