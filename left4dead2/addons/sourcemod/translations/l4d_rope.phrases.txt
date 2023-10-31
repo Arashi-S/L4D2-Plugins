@@ -9,7 +9,8 @@
 	}
 	"Denied" 
 	{
-		"en"		"Permision Denied"		
+		"en"		"Permision Denied"
+		"chi"		"只有管理员才能使用绳索哦，加油成为服管吧"		
 	}
 	"Switched" 
 	{
