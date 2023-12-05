@@ -25,6 +25,13 @@
 					"verify"	"\x0F\x85"
 					"patch"		"\x90\x90\x90\x90\x90\x90"
 				}
+
+				"windows"
+				{
+					"offset"	"1DFh"
+					"verify"	"\x74"
+					"patch"		"\xEB"
+				}
 			}
 
 			"SwapTeams::Patch2"
@@ -37,6 +44,13 @@
 					"verify"	"\x75"
 					"patch"		"\x90\x90"
 				}
+
+				"windows"
+				{
+					"offset"	"10h"
+					"verify"	"\x74"
+					"patch"		"\xEB"
+				}
 			}
 
 			"CleanUpMap::ShouldCreateEntity::Patch"
@@ -48,6 +62,13 @@
 					"offset"	"11h"
 					"verify"	"\x75"
 					"patch"		"\x90\x90"
+				}
+
+				"windows"
+				{
+					"offset"	"11h"
+					"verify"	"\x74"
+					"patch"		"\xEB"
 				}
 			}
 		}
@@ -80,6 +101,8 @@
 			{
 				"library"	"server"
 				"linux"		"@_ZN9CDirector7RestartEv"
+				"windows"	"\x2A\x2A\x2A\x2A\x2A\x2A\xA1\x2A\x2A\x2A\x2A\x33\x2A\x89\x2A\x2A\x56\x8B\x2A\x83\x2A\x2A\x89"
+				/* ? ? ? ? ? ? A1 ? ? ? ? 33 ? 89 ? ? 56 8B ? 83 ? ? 89 */
 			}
 
 			/* CDirectorVersusMode::RestartVersusLevelOnVote(CDirectorVersusMode *__hidden this) */
@@ -87,6 +110,8 @@
 			{
 				"library"	"server"
 				"linux"		"@_ZN19CDirectorVersusMode24RestartVersusLevelOnVoteEv"
+				"windows"	"\xC6\x41\x18\x00"
+				/* C6 41 18 00 */
 			}
 
 			/* CTerrorGameRules::CleanUpMap(void)::CTerrorMapEntityFilter::ShouldCreateEntity(int, char *) */
@@ -94,6 +119,8 @@
 			{
 				"library"	"server"
 				"linux"		"@_ZZN16CTerrorGameRules10CleanUpMapEvEN22CTerrorMapEntityFilter18ShouldCreateEntityEPKc"
+				"windows"	"\x55\x8B\xEC\x56\x57\x8B\xF1\xE8\x2A\x2A\x2A\x2A\x8B\x7D\x08\x84\xC0\x74\x2A\xA1\x2A\x2A\x2A\x2A"
+				/* 55 8B EC 56 57 8B F1 E8 ? ? ? ? 8B 7D 08 84 C0 74 ? A1 ? ? ? ? */
 			}
 
 			/* CDirectorVersusMode::RestartVsMode(CDirectorVersusMode *__hidden this) */
@@ -101,6 +128,8 @@
 			{
 				"library"	"server"
 				"linux"		"@_ZN19CDirectorVersusMode13RestartVsModeEv"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x14\x57\x8B\xF9\x80\x7F\x06\x00
+				/* 55 8B EC 83 EC 14 57 8B F9 80 7F 06 00 */
 			}
 		}
 	}
