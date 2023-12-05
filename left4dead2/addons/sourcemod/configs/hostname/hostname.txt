@@ -6,10 +6,10 @@ ServerName
 	}
 	"40018"
 	{
-		"baseName"	"[HspAF#3] 逛街服"
-	}
-	"20011"
-	{
 		"baseName"	"[HspAF#2] 逛街服"
+	}
+	"29006"
+	{
+		"baseName"	"[HspAF Zero] 逛街服"
 	}
 }
