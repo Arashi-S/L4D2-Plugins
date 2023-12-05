@@ -121,4 +121,15 @@
 			"message" "启用暴力开门"
 		}
 	}
+	"Tank飞行模式"
+	{
+		"exec Vote/TankFly/on.cfg"
+		{
+			"message" "开启Tank飞行模式"
+		}
+		"exec Vote/TankFly/off.cfg"
+		{
+			"message" "关闭Tank飞行模式"
+		}
+	}
 }
