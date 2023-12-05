@@ -85,7 +85,7 @@
 		}
 		"exec Vote/Hud/NanakaNeko.cfg"
 		{
-			"message" "启用奈's Hud"
+			"message" "启用路程 Hud"
 		}
 	}
 	"[ReLoad] 环境"
