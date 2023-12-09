@@ -73,21 +73,6 @@
 			"message" "关闭推推乐"
 		}
 	}
-	"[ReLoad]Hud 更换"
-	{
-		"exec Vote/Hud/miuwiki.cfg"
-		{
-			"message" "[默认]启用Miuwiki Hud"
-		}
-		"exec Vote/Hud/Ems.cfg"
-		{
-			"message" "启用EMS Hud"
-		}
-		"exec Vote/Hud/NanakaNeko.cfg"
-		{
-			"message" "启用奈"S Hud"
-		}
-	}
 	"[ReLoad] 环境"
 	{
 		"exec Vote/Env/On.cfg"
@@ -130,6 +115,21 @@
 		"exec Vote/TankFly/off.cfg"
 		{
 			"message" "关闭Tank飞行模式"
+		}
+	}
+	"[ReLoad]Hud 更换"
+	{
+		"exec Vote/Hud/miuwiki.cfg"
+		{
+			"message" "[默认]启用Miuwiki Hud"
+		}
+		"exec Vote/Hud/Ems.cfg"
+		{
+			"message" "启用EMS Hud"
+		}
+		"exec Vote/Hud/NanakaNeko.cfg"
+		{
+			"message" "启用奈"S Hud"
 		}
 	}
 }
