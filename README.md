@@ -7,4 +7,4 @@
 
 ### 请注意，上传的这个包只支持Linux
 * 如果想在Windows上使用请手动更换Windows版的 `SourceMod` 及被使用的相关拓展
-* 并删除插件： `command_buffer.smx` （解决Linux不加载插件CFG）
+* 并删除插件： `command_buffer.smx` （解决Linux不加载插件在CFG/sourcemod下生成的CFG）
