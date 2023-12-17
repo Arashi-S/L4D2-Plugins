@@ -81,14 +81,14 @@ public void OnPluginStart()
 	CreateConVar("lmc_bwnotice_version", PLUGIN_VERSION, "黑白发光插件版本.", FCVAR_NOTIFY|FCVAR_DONTRECORD);
 	hCvar_Enabled = CreateConVar("lmc_blackandwhite", "1", "启用幸存者黑白提示? 0=禁用,1=启用.", FCVAR_NOTIFY, true, 0.0, true, 1.0);
 	hCvar_GlowEnabled = CreateConVar("lmc_glow", "1", "启用幸存者黑白发光. 0=禁用,1=启用.", FCVAR_NOTIFY, true, 0.0, true, 1.0);
-	hCvar_GlowColour = CreateConVar("lmc_glowcolour", "123 104 238", "设置幸存者黑白后的发光颜色(0 0 255=蓝色).", FCVAR_NOTIFY);
+	hCvar_GlowColour = CreateConVar("lmc_glowcolour", "148 0 211", "设置幸存者黑白后的发光颜色(0 0 255=蓝色).", FCVAR_NOTIFY);
 	hCvar_GlowRange = CreateConVar("lmc_glowrange", "800.0", "黑白发光的幸存者最大的可视距离.", FCVAR_NOTIFY, true, 1.0);
 	hCvar_GlowFlash = CreateConVar("lmc_glowflash", "20", "黑白状态下的幸存者血量低于多少时黑白光环开始闪烁. 0=禁用.", FCVAR_NOTIFY, true, 0.0);
-	hCvar_NoticeType = CreateConVar("lmc_noticetype", "1", "幸存者黑白后的通知类型. 0= 关闭, 1=聊天窗, 2=屏幕中下, 3=暗示类提示(需要玩家自己打开游戏提示).", FCVAR_NOTIFY, true, 0.0, true, 3.0);
+	hCvar_NoticeType = CreateConVar("lmc_noticetype", "3", "幸存者黑白后的通知类型. 0= 关闭, 1=聊天窗, 2=屏幕中下, 3=暗示类提示(需要玩家自己打开游戏提示).", FCVAR_NOTIFY, true, 0.0, true, 3.0);
 	hCvar_TeamNoticeType = CreateConVar("lmc_teamnoticetype", "0", "幸存者黑白后通知给谁. 0=幸存者, 1=感染者, 2=幸存者和感染者.", FCVAR_NOTIFY, true, 0.0, true, 2.0);
 	hCvar_HintRange = CreateConVar("lmc_hintrange", "1200", "使用暗示类黑白提示时幸存者队友能看见提示消息的距离. 最小值1, 最大值9999.", FCVAR_NOTIFY, true, 1.0, true, 9999.0);
 	hCvar_HintTime = CreateConVar("lmc_hinttime", "10.0", "黑白消息的提示持续时间/秒. 最小值1, 最大值20.", FCVAR_NOTIFY, true, 1.0, true, 20.0);
-	hCvar_HintColour = CreateConVar("lmc_hintcolour", "255 110 180", "屏幕中间类或暗示类黑白提示的字体颜色(0 0 255=蓝色).", FCVAR_NOTIFY);
+	hCvar_HintColour = CreateConVar("lmc_hintcolour", "255 192 203", "屏幕中间类或暗示类黑白提示的字体颜色(0 0 255=蓝色).", FCVAR_NOTIFY);
 	
 	HookEvent("revive_success", eReviveSuccess);
 	HookEvent("heal_success", eHealSuccess);
@@ -222,7 +222,7 @@ public void eReviveSuccess(Event event, const char[] name, bool dontBroadcast)
 				SetEntProp(iEntity, Prop_Send, "m_iGlowType", 3);
 				SetEntProp(iEntity, Prop_Send, "m_glowColorOverride", iGlowColour);
 				SetEntProp(iEntity, Prop_Send, "m_nGlowRange", iGlowRange);
-				//PrintToChat(iClient, "\x04[提示]\x05玩家黑白:1.");
+				//PrintToChat(iClient, "\x04[Tips]\x05生命的迹象很微弱:1.");
 				
 			}
 			else
@@ -230,7 +230,7 @@ public void eReviveSuccess(Event event, const char[] name, bool dontBroadcast)
 				SetEntProp(iClient, Prop_Send, "m_iGlowType", 3);
 				SetEntProp(iClient, Prop_Send, "m_glowColorOverride", iGlowColour);
 				SetEntProp(iClient, Prop_Send, "m_nGlowRange", iGlowRange);
-				//PrintToChat(iClient, "\x04[提示]\x05玩家黑白:2.");
+				//PrintToChat(iClient, "\x04[Tips]\x05生命的迹象很微弱:2.");
 			}
 		}
 		else
@@ -238,7 +238,7 @@ public void eReviveSuccess(Event event, const char[] name, bool dontBroadcast)
 			SetEntProp(iClient, Prop_Send, "m_iGlowType", 3);
 			SetEntProp(iClient, Prop_Send, "m_glowColorOverride", iGlowColour);
 			SetEntProp(iClient, Prop_Send, "m_nGlowRange", iGlowRange);
-			//PrintToChat(iClient, "\x04[提示]\x05玩家黑白:3.");
+			//PrintToChat(iClient, "\x04[Tips]\x05生命的迹象微弱:3.");
 		}
 	}
 	
@@ -254,9 +254,9 @@ public void eReviveSuccess(Event event, const char[] name, bool dontBroadcast)
 					continue;
 				
 				if(iNoticeType == 1)
-					PrintToChat(i, "\x04[提示]\x03%s\x04(\x03%s\x04)\x05已黑白,需要治疗.", GetTrueName(iClient), sCharName);
+					PrintToChat(i, "\x04[NeedHelp]\x03%s\x04(\x03%s\x04)\x05已经在看黑白电视了，快帮帮他.", GetTrueName(iClient), sCharName);
 				if(iNoticeType == 2)
-					PrintHintText(i, "[提示] %s(%s) 已黑白,需要治疗.", GetTrueName(iClient), sCharName);
+					PrintHintText(i, "[NeedHelp] %s(%s) 已经在看黑白电视了，快帮帮他.", GetTrueName(iClient), sCharName);
 				if(iNoticeType == 3)
 					DirectorHint(iClient, i);
 			}
@@ -270,11 +270,11 @@ public void eReviveSuccess(Event event, const char[] name, bool dontBroadcast)
 					continue;
 				
 				if(iNoticeType == 1)
-					PrintToChat(i, "\x04[提示]\x03%s\x04(\x03%s\x04)\x05已黑白,需要治疗.", GetTrueName(iClient), sCharName);
+					PrintToChat(i, "\x04[NeedHelp]\x03%s\x04(\x03%s\x04)\x05已经在看黑白电视了，快帮帮他.", GetTrueName(iClient), sCharName);
 				if(iNoticeType == 2)
-					PrintHintText(i, "[提示] %s(%s) 已黑白,需要治疗.", GetTrueName(iClient), sCharName);
+					PrintHintText(i, "[NeedHelp] %s(%s) 已经在看黑白电视了，快帮帮他.", GetTrueName(iClient), sCharName);
 				if(iNoticeType == 3)
-					PrintHintText(i, "[提示] %s(%s) 已黑白,需要治疗.", GetTrueName(iClient), sCharName);
+					PrintHintText(i, "[NeedHelp] %s(%s) 已经在看黑白电视了，快帮帮他.", GetTrueName(iClient), sCharName);
 			}
 		}
 		case 2:
@@ -285,12 +285,12 @@ public void eReviveSuccess(Event event, const char[] name, bool dontBroadcast)
 					continue;
 				
 				if(iNoticeType == 1)
-					PrintToChat(i, "\x04[提示]\x03%s\x04(\x03%s\x04)\x05已黑白,需要治疗.", GetTrueName(iClient), sCharName);
+					PrintToChat(i, "\x04[NeedHelp]\x03%s\x04(\x03%s\x04)\x05已经在看黑白电视了，快帮帮他.", GetTrueName(iClient), sCharName);
 				if(iNoticeType == 2)
-					PrintHintText(i, "[提示] %s(%s) 已黑白,需要治疗.", GetTrueName(iClient), sCharName);
+					PrintHintText(i, "[NeedHelp] %s(%s) 已经在看黑白电视了，快帮帮他.", GetTrueName(iClient), sCharName);
 				if(GetClientTeam(i) !=2)
 				{
-					PrintHintText(i, "[提示] %s(%s) 已黑白,需要治疗.", GetTrueName(iClient), sCharName);
+					PrintHintText(i, "[NeedHelp] %s(%s) 已经在看黑白电视了，快帮帮他.", GetTrueName(iClient), sCharName);
 					continue;
 				}
 				if(iNoticeType == 3)
@@ -358,15 +358,15 @@ public void eHealSuccess(Event event, const char[] name, bool dontBroadcast)
 				
 				if(iNoticeType == 1)
 					if(iClient != iHealer)
-						PrintToChat(i, "\x04[提示]\x03%s\x04(\x03%s\x04)\x05已接受治疗,不再黑白.", GetTrueName(iClient), sCharName);
+						PrintToChat(i, "\x04[Help]\x03%s\x04(\x03%s\x04)\x05已接受治疗,视界再次有了颜色.", GetTrueName(iClient), sCharName);
 					else
-						PrintToChat(i, "\x04[提示]\x03%s\x04(\x03%s\x04)\x05治疗了自己,不再黑白.", GetTrueName(iClient), sCharName);
+						PrintToChat(i, "\x04[Help]\x03%s\x04(\x03%s\x04)\x05治疗了自己,喜提彩色电视.", GetTrueName(iClient), sCharName);
 				
 				if(iNoticeType == 2)
 					if(iClient != iHealer)
-						PrintHintText(i, "[提示] %s(%s) 已接受治疗,不再黑白.", GetTrueName(iClient), sCharName);
+						PrintHintText(i, "[Help] %s(%s) 已接受治疗,视界再次有了颜色.", GetTrueName(iClient), sCharName);
 					else
-						PrintHintText(i, "[提示] %s(%s) 治疗了自己,不再黑白.", GetTrueName(iClient), sCharName);
+						PrintHintText(i, "[Help] %s(%s) 治疗了自己,喜提彩色电视.", GetTrueName(iClient), sCharName);
 				
 				if(iNoticeType == 3)
 					DirectorHintAll(iClient, iHealer, i);
@@ -381,21 +381,21 @@ public void eHealSuccess(Event event, const char[] name, bool dontBroadcast)
 				
 				if(iNoticeType == 1)
 					if(iClient != iHealer)
-						PrintToChat(i, "\x04[提示]\x03%s\x04(\x03%s\x04)\x05已接受治疗,不再黑白.", GetTrueName(iClient), sCharName);
+						PrintToChat(i, "\x04[Help]\x03%s\x04(\x03%s\x04)\x05已接受治疗,视界再次有了颜色.", GetTrueName(iClient), sCharName);
 					else
-						PrintToChat(i, "\x04[提示]\x03%s\x04(\x03%s\x04)\x05治疗了自己,不再黑白.", GetTrueName(iClient), sCharName);
+						PrintToChat(i, "\x04[Help]\x03%s\x04(\x03%s\x04)\x05治疗了自己,喜提彩色电视.", GetTrueName(iClient), sCharName);
 				
 				if(iNoticeType == 2)
 					if(iClient != iHealer)
-						PrintHintText(i, "[提示] %s(%s) 已接受治疗,不再黑白.", GetTrueName(iClient), sCharName);
+						PrintHintText(i, "[Help] %s(%s) 已接受治疗,视界再次有了颜色.", GetTrueName(iClient), sCharName);
 					else
-						PrintHintText(i, "[提示] %s(%s) 治疗了自己,不再黑白.", GetTrueName(iClient), sCharName);
+						PrintHintText(i, "[Help] %s(%s) 治疗了自己,喜提彩色电视.", GetTrueName(iClient), sCharName);
 				
 				if(iNoticeType == 3)
 					if(iClient != iHealer)
-						PrintHintText(i, "[提示] %s(%s) 已接受治疗,不再黑白.", GetTrueName(iClient), sCharName);
+						PrintHintText(i, "[Help] %s(%s) 已接受治疗,视界再次有了颜色.", GetTrueName(iClient), sCharName);
 					else
-						PrintHintText(i, "[提示] %s(%s) 治疗了自己,不再黑白.", GetTrueName(iClient), sCharName);
+						PrintHintText(i, "[Help] %s(%s) 治疗了自己,喜提彩色电视.", GetTrueName(iClient), sCharName);
 			}
 		}
 		case 2:
@@ -407,25 +407,25 @@ public void eHealSuccess(Event event, const char[] name, bool dontBroadcast)
 				
 				if(iNoticeType == 1)
 					if(iClient != iHealer)
-						PrintToChat(i, "\x04[提示]\x03%s\x04(\x03%s\x04)\x05已接受治疗,不再黑白.", GetTrueName(iClient), sCharName);
+						PrintToChat(i, "\x04[Help]\x03%s\x04(\x03%s\x04)\x05已接受治疗,视界再次有了颜色.", GetTrueName(iClient), sCharName);
 					else
-						PrintToChat(i, "\x04[提示]\x03%s\x04(\x03%s\x04)\x05治疗了自己,不再黑白.", GetTrueName(iClient), sCharName);
+						PrintToChat(i, "\x04[Help]\x03%s\x04(\x03%s\x04)\x05治疗了自己,喜提彩色电视.", GetTrueName(iClient), sCharName);
 				
 				if(iNoticeType == 2)
 					if(iClient != iHealer)
-						PrintHintText(i, "[提示] %s(%s) 已接受治疗,不再黑白.", GetTrueName(iClient), sCharName);
+						PrintHintText(i, "[Help] %s(%s) 已接受治疗,视界再次有了颜色.", GetTrueName(iClient), sCharName);
 					else
-						PrintHintText(i, "[提示] %s(%s) 治疗了自己,不再黑白.", GetTrueName(iClient), sCharName);
+						PrintHintText(i, "[Help] %s(%s) 治疗了自己,喜提彩色电视.", GetTrueName(iClient), sCharName);
 				
 				if(GetClientTeam(i) !=2)
 					if(iClient != iHealer)
 					{
-						PrintHintText(i, "[提示] %s(%s) 已接受治疗,不再黑白.", GetTrueName(iClient), sCharName);
+						PrintHintText(i, "[Help] %s(%s) 已接受治疗,视界再次有了颜色.", GetTrueName(iClient), sCharName);
 						continue;
 					}
 					else
 					{
-						PrintHintText(i, "[提示] %s(%s) 治疗了自己,不再黑白.", GetTrueName(iClient), sCharName);
+						PrintHintText(i, "[Help] %s(%s) 治疗了自己,喜提彩色电视.", GetTrueName(iClient), sCharName);
 						continue;
 					}
 				if(iNoticeType == 3)
@@ -718,7 +718,7 @@ static void DirectorHint(int iClient, int i)
 	FormatEx(sValues, sizeof(sValues), "%f", fHintTime);
 	DispatchKeyValue(iEntity, "hint_timeout", sValues);
 	
-	FormatEx(sValues, sizeof(sValues), "%s(%s) 已黑白,需要治疗", GetTrueName(iClient), sCharName);
+	FormatEx(sValues, sizeof(sValues), "%s(%s) 在看黑白电视了,快帮帮他", GetTrueName(iClient), sCharName);
 	DispatchKeyValue(iEntity, "hint_caption", sValues);
 	DispatchKeyValue(iEntity, "hint_color", sHintColour);
 	DispatchSpawn(iEntity);
@@ -749,9 +749,9 @@ static void DirectorHintAll(int iClient, int iHealer, int i)
 	DispatchKeyValue(iEntity, "hint_timeout", sValues);
 	
 	if(iClient == iHealer)
-		FormatEx(sValues, sizeof(sValues), "%s(%s) 治疗了自己,不再黑白.", GetTrueName(iClient), sCharName);
+		FormatEx(sValues, sizeof(sValues), "%s(%s) 治疗了自己,喜提彩色电视.", GetTrueName(iClient), sCharName);
 	else
-		FormatEx(sValues, sizeof(sValues), "%s(%s) 已接受治疗,不再黑白.", GetTrueName(iClient), sCharName);
+		FormatEx(sValues, sizeof(sValues), "%s(%s) 已接受治疗,视界再次有了颜色.", GetTrueName(iClient), sCharName);
 	
 	DispatchKeyValue(iEntity, "hint_caption", sValues);
 	DispatchKeyValue(iEntity, "hint_color", sHintColour);
