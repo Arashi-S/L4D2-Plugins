@@ -7,4 +7,8 @@ Configs
 	"cfg/server.cfg"			"Standard Server Setup"
 	"cfg/sourcemod/sm_warmode_on.cfg"	"War Mode On"
 	"cfg/sourcemod/sm_warmode_off.cfg"	"War Mode Off"
+	"cfg/Vote/shove/on.cfg"	"开启推推楽"
+	"cfg/Vote/shove/off.cfg"	"关闭推推楽"
+	"cfg/Vote/Special_Num/Hard_Special.cfg"	"6特16特"
+	"cfg/Vote/Special_Num/Common_Special.cfg"	"3特6特"
 }
