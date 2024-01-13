@@ -18,7 +18,7 @@
 
 
 
-#define PLUGIN_VERSION		"2.31"
+#define PLUGIN_VERSION		"2.32"
 
 /*======================================================================================
 	Plugin Info:
@@ -31,6 +31,9 @@
 
 ========================================================================================
 	Change Log:
+
+2.32 (20-Dec-2023)
+	- Added cvar "l4d_gear_transfer_start" to block auto grab/give for a specified time on round start. Requested by "Iciaria".
 
 2.31 (27-Jul-2023)
 	- Fixed compile error on SourceMod version 1.12. Thanks to "ur5efj" for reporting.
@@ -403,13 +406,13 @@
 
 
 // Cvar handles
-ConVar g_hCvarAllow, g_hCvarDying, g_hCvarDistGive, g_hCvarDistGrab, g_hCvarGive, g_hCvarGrab, g_hCvarIdle, g_hCvarMethod, g_hCvarModesBot, g_hCvarModesOn, g_hCvarModesOff, g_hCvarModesTog, g_hCvarNotify, g_hCvarNotifies, g_hCvarSounds, g_hCvarTimeout, g_hCvarTimerGive, g_hCvarTimerGrab, g_hCvarTraces, g_hCvarTypes, g_hCvarVocalize;
+ConVar g_hCvarAllow, g_hCvarDying, g_hCvarDistGive, g_hCvarDistGrab, g_hCvarGive, g_hCvarGrab, g_hCvarIdle, g_hCvarMethod, g_hCvarModesBot, g_hCvarModesOn, g_hCvarModesOff, g_hCvarModesTog, g_hCvarNotify, g_hCvarNotifies, g_hCvarSounds, g_hCvarStart, g_hCvarTimeout, g_hCvarTimerGive, g_hCvarTimerGrab, g_hCvarTraces, g_hCvarTypes, g_hCvarVocalize;
 ConVar g_hCvarMPGameMode, g_hCvarMaxIncap;
 
 // Cvar variables
 int g_iCvarMaxIncap, g_iCvarDying, g_iCvarGive, g_iCvarGrab, g_iCvarMethod, g_iCvarNotify, g_iCvarNotifies, g_iCvarTypes, g_iCvarTraces, g_iCvarVocalize;
 bool g_bCvarSounds, g_bCvarIdle;
-float g_fDistGive, g_fDistGrab, g_fTimerGive, g_fTimerGrab, g_fCvarTimeout, g_fBlockVocalize;
+float g_fDistGive, g_fDistGrab, g_fCvarStart, g_fTimerGive, g_fTimerGrab, g_fCvarTimeout, g_fBlockVocalize, g_fStartTime;
 
 // Variables
 bool g_bCvarAllow, g_bMapStarted, g_bModeOffAuto, g_bRoundOver, g_bRoundIntro, g_bTranslation, g_bTranslationNew, g_bLeft4Dead2;
@@ -683,24 +686,25 @@ public void OnPluginStart()
 	g_hCvarModesOn =		CreateConVar(	"l4d_gear_transfer_modes_on",		"",				"Turn on the plugin in these game modes, separate by commas (no spaces). (Empty = all).", CVAR_FLAGS );
 	g_hCvarModesOff =		CreateConVar(	"l4d_gear_transfer_modes_off",		"",				"Turn off the plugin in these game modes, separate by commas (no spaces). (Empty = none).", CVAR_FLAGS );
 	g_hCvarModesTog =		CreateConVar(	"l4d_gear_transfer_modes_tog",		"0",			"Turn on the plugin in these game modes. 0=All, 1=Coop, 2=Survival, 4=Versus, 8=Scavenge. Add numbers together.", CVAR_FLAGS );
-	g_hCvarDistGive =		CreateConVar(	"l4d_gear_transfer_dist_give",		"150.0",		"How close you have to be to transfer an item. Also affects bots auto give range.", CVAR_FLAGS);
-	g_hCvarDistGrab =		CreateConVar(	"l4d_gear_transfer_dist_grab",		"150.0",		"How close the bots need to be for them to pick up an item.", CVAR_FLAGS);
-	g_hCvarDying =			CreateConVar(	"l4d_gear_transfer_dying",			"0",			"Bots only auto give when their receiver is black and white. 0=Ignored. 1=First Aid. 2=Pills or Adrenaline (game logic will give anyway, unless using Bot Healing plugin). 3=Both.", CVAR_FLAGS);
-	g_hCvarIdle =			CreateConVar(	"l4d_gear_transfer_idle",			"0",			"0=No, 1=Yes. Can items be transferred with idle players, players will be able to grab and switch items with idle players.", CVAR_FLAGS);
-	g_hCvarMethod =			CreateConVar(	"l4d_gear_transfer_method",			"3",			"0=Off. 1=Shove only, 2=Reload key only, 3=Shove and Reload key to transfer items.", CVAR_FLAGS);
-	g_hCvarNotifies =		CreateConVar(	"l4d_gear_transfer_notifies",		"7",			"Notify on these types of transfers: 1=Give, 2=Grab, 4=Switch, 7=All. Add numbers together.", CVAR_FLAGS);
-	g_hCvarNotify =			CreateConVar(	"l4d_gear_transfer_notify",			"1",			"0=Off, 1=Display transfers to everyone, 2=Also display when transferring pills/adrenaline via the games own system, 4=Display between recipients only. 8=Ignore printing pills/adrenaline and use game prompt only. Add numbers together.", CVAR_FLAGS);
-	g_hCvarSounds =			CreateConVar(	"l4d_gear_transfer_sounds",			"1",			"0=Off, 1=Play a sound to the person giving/receiving an item.", CVAR_FLAGS);
-	g_hCvarTimerGive =		CreateConVar(	"l4d_gear_transfer_timer_give",		"1.0",			"0.0=Off. How often to check survivor bot positions to real clients for auto give.", CVAR_FLAGS, true, 0.0, true, 10.0);
-	g_hCvarTimerGrab =		CreateConVar(	"l4d_gear_transfer_timer_grab",		"0.5",			"0.0=Off. How often to check survivor bot positions to item positions for auto grab.", CVAR_FLAGS, true, 0.0, true, 10.0);
-	g_hCvarTimeout =		CreateConVar(	"l4d_gear_transfer_timeout",		"5.0",			"Timeout to stop bots returning an item after switching with a player. Timeout to prevent bots auto grabbing a recently dropped item.", CVAR_FLAGS, true, 1.0);
-	g_hCvarTraces =			CreateConVar(	"l4d_gear_transfer_traces",			"15",			"Maximum number of ray traces per frame for auto give/grab. This could be increased with minimal impact.", CVAR_FLAGS, true, 1.0, true, 120.0);
+	g_hCvarDistGive =		CreateConVar(	"l4d_gear_transfer_dist_give",		"150.0",		"您必须距离多近才能转移物品。 也会影响机器人自动给出范围.", CVAR_FLAGS);
+	g_hCvarDistGrab =		CreateConVar(	"l4d_gear_transfer_dist_grab",		"150.0",		"机器人需要距离多远才能拾取物品.", CVAR_FLAGS);
+	g_hCvarDying =			CreateConVar(	"l4d_gear_transfer_dying",			"0",			"机器人仅在接收玩家为黑白时自动给予。 0=忽略。 1=急救。 2=药丸或肾上腺素（游戏逻辑无论如何都会给出，除非使用机器人治疗插件）。 3=两者.", CVAR_FLAGS);
+	g_hCvarIdle =			CreateConVar(	"l4d_gear_transfer_idle",			"0",			"0=否，1=是。 物品可以与闲置玩家转移吗，玩家将可以与闲置玩家抓取和交换物品.", CVAR_FLAGS);
+	g_hCvarMethod =			CreateConVar(	"l4d_gear_transfer_method",			"2",			"0=Off. 1=只使用推有效, 2=仅重载键有效, 3=使用推与重载键来转移物品.", CVAR_FLAGS);
+	g_hCvarNotifies =		CreateConVar(	"l4d_gear_transfer_notifies",		"7",			"通知这些类型的操作：1=给予、2=抓取、4=交换、7=全部。 将数字相加.", CVAR_FLAGS);
+	g_hCvarNotify =			CreateConVar(	"l4d_gear_transfer_notify",			"4",			"0=关闭，1=向所有人显示传输，2=通过游戏自己的系统传输药丸/肾上腺素时也显示，4=仅在接收者之间显示。 8=忽略打印药丸/肾上腺素并仅使用游戏提示。 将数字相加.", CVAR_FLAGS);
+	g_hCvarSounds =			CreateConVar(	"l4d_gear_transfer_sounds",			"1",			"0=关闭，1=向给予/接收物品的人播放声音.", CVAR_FLAGS);
+	g_hCvarStart =			CreateConVar(	"l4d_gear_transfer_start",			"16",			"从回合开始时阻止自动给予和自动抓取这么多秒.", CVAR_FLAGS);
+	g_hCvarTimerGive =		CreateConVar(	"l4d_gear_transfer_timer_give",		"1.0",			"0.0=关闭。 多久检查一次幸存者机器人位置给真实客户的自动给予.", CVAR_FLAGS, true, 0.0, true, 10.0);
+	g_hCvarTimerGrab =		CreateConVar(	"l4d_gear_transfer_timer_grab",		"0.5",			"0.0=关闭。 多久检查一次幸存者机器人位置到物品位置以进行自动抓取.", CVAR_FLAGS, true, 0.0, true, 10.0);
+	g_hCvarTimeout =		CreateConVar(	"l4d_gear_transfer_timeout",		"5.0",			"与玩家切换后阻止机器人返回物品的时间。 设置这个时间内防止机器人自动抓取最近掉落的物品.", CVAR_FLAGS, true, 1.0);
+	g_hCvarTraces =			CreateConVar(	"l4d_gear_transfer_traces",			"15",			"自动给予/抓取的每帧光线追踪的最大数量。 这可以在影响最小的情况下增加.", CVAR_FLAGS, true, 1.0, true, 120.0);
 	g_hCvarGive =			CreateConVar(	"l4d_gear_transfer_types_give",		"123456789",	"Which type can bots auto give. 0=Off. 1=Adrenaline, 2=Pain Pills, 3=Molotov, 4=Pipe Bomb, 5=Vomit Jar, 6=First Aid, 7=Explosive Rounds, 8=Incendiary Rounds, 9=Defibrillator. Any string combination.", CVAR_FLAGS);
 	g_hCvarGrab =			CreateConVar(	"l4d_gear_transfer_types_grab",		"123456789",	"Which type can bots auto grab. 0=Off. 1=Adrenaline, 2=Pain Pills, 3=Molotov, 4=Pipe Bomb, 5=Vomit Jar, 6=First Aid, 7=Explosive Rounds, 8=Incendiary Rounds, 9=Defibrillator. Any string combination.", CVAR_FLAGS);
 	g_hCvarTypes =			CreateConVar(	"l4d_gear_transfer_types_real",		"123456789",	"The types real players can transfer. 0=Off. 1=Adrenaline, 2=Pain Pills, 3=Molotov, 4=Pipe Bomb, 5=Vomit Jar, 6=First Aid, 7=Explosive Rounds, 8=Incendiary Rounds, 9=Defibrillator. Any string combination.", CVAR_FLAGS);
 	g_hCvarVocalize =		CreateConVar(	"l4d_gear_transfer_vocalize",		"1",			"0=Off. 1=Players vocalize when transferring items. Blocked for the first 60 seconds of a new round.", CVAR_FLAGS);
 	CreateConVar(							"l4d_gear_transfer_version",		PLUGIN_VERSION, "Gear Transfer plugin version.", FCVAR_NOTIFY|FCVAR_DONTRECORD);
-	AutoExecConfig(true,					"l4d_gear_transfer");
+	//AutoExecConfig(true,					"l4d_gear_transfer");
 
 	g_hCvarMPGameMode = FindConVar("mp_gamemode");
 	g_hCvarMPGameMode.AddChangeHook(ConVarChanged_Allow);
@@ -727,6 +731,7 @@ public void OnPluginStart()
 	g_hCvarNotify.AddChangeHook(ConVarChanged_Cvars);
 	g_hCvarNotifies.AddChangeHook(ConVarChanged_Cvars);
 	g_hCvarSounds.AddChangeHook(ConVarChanged_Cvars);
+	g_hCvarStart.AddChangeHook(ConVarChanged_Cvars);
 	g_hCvarTimeout.AddChangeHook(ConVarChanged_Cvars);
 	g_hCvarTimerGive.AddChangeHook(ConVarChanged_Cvars);
 	g_hCvarTimerGrab.AddChangeHook(ConVarChanged_Cvars);
@@ -770,6 +775,9 @@ public void OnMapEnd()
 
 void ResetPlugin()
 {
+	g_fBlockVocalize = 0.0;
+	g_fStartTime = 0.0;
+
 	for( int i = 1; i <= MaxClients; i++ )
 	{
 		g_fNextTransfer[i] = 0.0;
@@ -874,6 +882,7 @@ void GetCvars()
 	g_iCvarNotify = g_hCvarNotify.IntValue;
 	g_iCvarNotifies = g_hCvarNotifies.IntValue;
 	g_bCvarSounds = g_hCvarSounds.BoolValue;
+	g_fCvarStart = g_hCvarStart.FloatValue;
 	g_fCvarTimeout = g_hCvarTimeout.FloatValue;
 	g_fTimerGive = g_hCvarTimerGive.FloatValue;
 	g_fTimerGrab = g_hCvarTimerGrab.FloatValue;
@@ -1102,6 +1111,7 @@ void Event_RoundStart(Event event, const char[] name, bool dontBroadcast)
 	#endif
 
 	g_bRoundOver = false;
+	g_fStartTime = GetGameTime();
 
 	// Vocalize block
 	if( g_iCvarVocalize && (g_iCvarGive || g_iCvarGrab) )
@@ -1834,6 +1844,7 @@ Action TimerAutoGive(Handle timer)
 	}
 
 	if( g_bRoundIntro ) return Plugin_Continue;
+	if( g_fCvarStart && g_fStartTime + g_fCvarStart > GetGameTime() ) return Plugin_Continue;
 
 	#if BENCHMARK
 	StartProfiling(g_Profiler);
@@ -1942,7 +1953,7 @@ Action TimerAutoGive(Handle timer)
 										// Validate receiver is black and white for first aid/pills/adrenaline
 										if( g_iCvarDying )
 										{
-											switch( type -1 )
+											switch( type - 1 )
 											{
 												case TYPE_FIRST:
 												{
